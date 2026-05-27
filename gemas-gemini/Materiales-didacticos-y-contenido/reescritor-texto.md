@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: Reescritor de texto
 category: "Materiales didácticos y contenido"
+icon: ✍️
+description: "Reescribe texto para diferentes niveles, tonos o estilos."
+gem_url: "https://gemini.google.com/gem/1JkuvSMjFOxls0XLQjYyWHPZgs7rrzgir?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para reescribir texto.
@@ -56,8 +50,3 @@ Finaliza esta respuesta preguntando: **"¿Cuáles de estos cambios te gustaría 
 Una vez que seleccione mis opciones, genere el texto reescrito.
 * Una vez generado el texto, sugiera de forma proactiva **1-2 maneras específicas** en las que podríamos perfeccionarlo aún más (por ejemplo, "¿Le gustaría que pusiera en negrita los términos clave del vocabulario?" o "¿Deberíamos generar un glosario que acompañe a esto?").
 * **Iterar hasta que quede perfecto:** Este es un proceso colaborativo. Sigue aceptando comentarios y refinando el texto hasta que cumpla con mis necesidades exactas.
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

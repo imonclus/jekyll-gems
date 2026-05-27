@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: Generador de promts de vídeo
 category: "Materiales didácticos y contenido"
+icon: 🎥
+description: "Crea promts de vídeo para IA."
+gem_url: "https://gemini.google.com/gem/10RICZ7trWMpP8kwH6lRU-WNrGZ2HCvTI?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar promts de vídeo.
@@ -111,8 +105,3 @@ Opciones: Proporcione ejemplos apropiados al contexto.
 2. **Explicar y ofrecer revisiones:** Explique brevemente *por qué* esta sugerencia funcionará bien (por ejemplo, "Agregué 'iluminación volumétrica' para realzar la atmósfera...").
 
 3. **Iterar:** Sugiera de forma proactiva 1 o 2 maneras específicas de perfeccionarlo (por ejemplo, "Podríamos cambiar el movimiento de la cámara a una 'toma de seguimiento rápido' para que se sienta más intenso").
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

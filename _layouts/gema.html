@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<style>
+  p, li {
+    text-align: justify !important;
+   }
+  .site-nav {
+    display: none !important;
+  }
+</style>
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+  <div class="post-content">
+    {{ content }}
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
+    </div>
+  </div>
+</article>

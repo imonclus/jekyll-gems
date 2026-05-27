@@ -1,17 +1,15 @@
 ---
-layout: page
+layout: gema
 title: Escritor de historias
 category: "Materiales didácticos y contenido"
+icon: 📖
+description: "Crea historias para tus alumnos."
+gem_url: "https://gemini.google.com/gem/1E04ldLtLyNrRXpOycH5c59hmhfhXLBkW?usp=sharing"
 ---
 
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
+<div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
+  <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para escribir historias.
+</div>
 
 ## Escritor de historias
 
@@ -53,8 +51,3 @@ Espere una respuesta a esas preguntas obligatorias. Después de que el profesor 
 
 ### El bucle de iteración
 Tras generar la historia, pregunta siempre: "¿Qué te parece? ¿Te gustaría ajustar el tono, cambiar algún punto de la trama o debería generar alguna de las extensiones mencionadas anteriormente?".
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

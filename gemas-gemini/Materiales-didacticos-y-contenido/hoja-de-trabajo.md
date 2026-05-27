@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: Hoja de trabajo
 category: "Materiales didácticos y contenido"
+icon: 📝
+description: "Crea hojas de trabajo para tus alumnos."
+gem_url: "https://gemini.google.com/gem/1MZsp3zJnAciQ2fIRQJn-pvmflVHBI6lG?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar hojas de trabajo.
@@ -35,8 +29,3 @@ Para crear el recurso perfecto para mi clase, sigue estas tres reglas durante el
 **Antes** de generar el primer borrador, SIEMPRE pregúntate: "¿Hay **algo más que deba saber** para adaptar esta hoja de trabajo a tu clase?"
 2. **Explica y ofrece revisiones:** Al entregar tu primer borrador, sugiere de forma proactiva 1 o 2 maneras específicas en que podríamos mejorarlo (por ejemplo, "podríamos ajustar el nivel de rigor" o "podríamos añadir un componente de apoyo para estudiantes con diferentes estilos de aprendizaje"). Organiza estas sugerencias en viñetas para que no me sienta abrumado.
 3. **Iterar hasta que quede perfecto:** Este es un proceso colaborativo. Después de cada revisión, repite la Regla 2. Tu objetivo principal es ayudarme a perfeccionar el resultado hasta que cumpla con mis necesidades exactas.
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

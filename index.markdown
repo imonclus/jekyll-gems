@@ -47,7 +47,7 @@ layout: home
   .gem-actions { display: flex; gap: 0.5rem; }
   .btn { flex: 1; text-align: center; text-decoration: none; padding: 0.6rem; border-radius: 4px; font-weight: bold; font-size: 0.9rem; }
   .btn-details { background: #ecf0f1; color: #2c3e50; }
-  .btn-open { background: #8e44ad; color: #ffffff; }
+  .btn-open, .btn-open:visited { background: #8e44ad; color: #ffffff; }
 </style>
 
 <div class="hero-section">
@@ -65,136 +65,201 @@ layout: home
     <ul>
       <li><a href="#evaluacion" class="active">📊 Evaluación, datos y calificación</a></li>
       <li><a href="#materiales" class="active">🗓️ Materiales didácticos y contenido</a></li>
-      <li><a href="#comunicacion">💬 Comunicación</a></li>
+      <li><a href="#integracion" class="active">💬 Uso e integración de la IA</a></li>
+      <li><a href="#alfabetizacion" class="active">💬 Alfabetización, lectura, escritura y lenguaje</a></li>
+      <li><a href="#herramientas" class="active">💬 Herramientas orientadas al estudiante</a></li>
+      <li><a href="#recursos" class="active">💬 Recursos de apoyo y diferenciación</a></li>
+      <li><a href="#planificacion" class="active">💬 Planificación de lecciones y diseño curricular</a></li>
+      <li><a href="#participacion" class="active">💬 Participación y juegos</a></li>
+      <li><a href="#tareas" class="active">💬 Tareas profesionales y administrativas</a></li>
+      <li><a href="#ciencias" class="active">💬 Matemáticas, Ciencias y STEM</a></li>     
+          
     </ul>
   </aside>
 
   <!-- Contenido Principal -->
   <main class="content-area">
+    {% assign all_gems = site.pages | where_exp: "item", "item.path contains 'gemas-gemini/'" %}
     
     <!-- Categoría: Evaluación -->
     <section id="evaluacion" class="category-section">
       <h2>📊 Evaluación, datos y calificación</h2>
       <div class="gems-grid">
-        
-        <div class="gem-card">
-          <h3>🎥 YouTube Quiz</h3>
-          <p>Crea cuestionarios interactivos a partir de cualquier video de YouTube usando la IA de Gemini.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/youTube-quiz.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1id9pIZPJstwvi1cJzz_i5VS3_ezDFs-c?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+        {% assign category_gems = all_gems | where: "category", "Evaluación, datos y calificación" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
           </div>
-        </div>
-        
-        <div class="gem-card">
-          <h3>📝 Preguntas sobre el texto</h3>
-          <p>Genera un conjunto de preguntas específicas y rigurosas vinculadas directamente a un texto o contenido didáctico.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/preguntas-dependen-texto.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1V8NPY42IcgvGlCjDiXP_B7718sGMUgN3?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-        
-        <div class="gem-card">
-          <h3>📝 Comentarios sobre las tareas de los estudiantes</h3>
-          <p>Genera un conjunto de comentarios sobre las tareas de los estudiantes.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/comentarios-tareas-estudiantes.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1ws7gkLZMeTzBOhmQ_A2Gfb5MvDg-Ictl?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-
-        <div class="gem-card">
-          <h3>📝 Criterios de éxito unificados</h3>
-          <p>Genera criterios de éxito unificados para una tarea específica.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/criterios-exito-unificados.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1VTYkQZRabWDr_2LkGfeU87sGMzzWm6l3?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-
-        <div class="gem-card">
-          <h3>📝 Rúbrica</h3>
-          <p>Genera rúbricas claras, alineadas con los estándares y prácticas.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/rubrica.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1ZDd0giVmXTik72sdtqMuLMIa0K-4j5R0?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-
-        <div class="gem-card">
-          <h3>📝 Análisis de Mapa NWEA</h3>
-          <p>Genera rúbricas claras, alineadas con los estándares y prácticas.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Evaluación-datos-calificacion/NWEA-analisis-de-mapa.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1ELnyIgY-U7l7zwYbWlyd2kzc-3Lm7CVg?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-
+        {% endfor %}
       </div>
       </section>
 
     <!-- Categoría: Materiales didácticos y contenido -->
     <section id="materiales" class="category-section">
-      <h2>📊 Materiales didácticos y contenido</h2>
+      <h2>🗓️ Materiales didácticos y contenido</h2>
       <div class="gems-grid">
-
-        <div class="gem-card">
-          <h3>🎥 Hoja de trabajo</h3>
-          <p>Crea hojas de trabajo para tus alumnos.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/hoja-de-trabajo.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1MZsp3zJnAciQ2fIRQJn-pvmflVHBI6lG?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+        {% assign category_gems = all_gems | where: "category", "Materiales didácticos y contenido" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
           </div>
-        </div>
-
-        <div class="gem-card">
-          <h3>🎥 Listas de vocabulario</h3>
-          <p>Crea hojas de trabajo para tus alumnos.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/lista-vocabulario.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1824LJbkOZ3dEUSuMJn92oCI-BlnTR6WG?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>
-
-        <div class="gem-card">
-          <h3>🎥 Genera promts IA de vídeo</h3>
-          <p>Crea promts de vídeo para IA.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/generador-promts-vídeo.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/10RICZ7trWMpP8kwH6lRU-WNrGZ2HCvTI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>   
-
-        <div class="gem-card">
-          <h3>🎥 Reescribir texto</h3>
-          <p>Crea promts de vídeo para IA.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/reescritor-texto.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1JkuvSMjFOxls0XLQjYyWHPZgs7rrzgir?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div> 
-
-        <div class="gem-card">
-          <h3>🎥 Escritor de historias</h3>
-          <p>Crea historias para tus alumnos.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/escritor-historias.md %}" class="btn btn-details">Detalles</a>
-            <a href="https://gemini.google.com/gem/1E04ldLtLyNrRXpOycH5c59hmhfhXLBkW?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div> 
-
-        <div class="gem-card">
-          <h3>🎥 Actividad de clasificación</h3>
-          <p>Crea historias para tus alumnos.</p>
-          <div class="gem-actions">
-            <a href="{% link gemas-gemini/Materiales-didacticos-y-contenido/actividad-clasificacion.md %}" class="btn btn-details">Detalles</a>
-            <a href="hhttps://gemini.google.com/gem/1uWHtj7VAiXac0ZYgkQWHZgYFn_OOjPDs?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
-          </div>
-        </div>        
-        
+        {% endfor %}
       </div>
     </section>
+
+    <!-- Categoría: Comunicación -->
+    <section id="integracion" class="category-section">
+      <h2>💬 Uso e integración de la IA</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Uso e integración de la IA" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    
+    <!-- Categoría: Alfabetización -->
+    <section id="alfabetizacion" class="category-section">
+      <h2>💬 Alfabetización, lectura, escritura y lenguaje</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Alfabetización, lectura, escritura y lenguaje" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Categoría: Herramientas -->
+    <section id="herramientas" class="category-section">
+      <h2>💬 Herramientas orientadas al estudiante</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Herramientas orientadas al estudiante" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Categoría: Recursos -->
+    <section id="recursos" class="category-section">
+      <h2>💬 Recursos de apoyo y diferenciación</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Recursos de apoyo y diferenciación" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Categoría: Planificación de lecciones y diseño curricular -->
+    <section id="planificacion" class="category-section">
+      <h2>💬 Planificación de lecciones y diseño curricular</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Planificación de lecciones y diseño curricular" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Categoría: Participación y juegos -->
+    <section id="participacion" class="category-section">
+      <h2>💬 Participación y juegos</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Participación y juegos" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section> 
+
+    <!-- Categoría: Tareas profesionales y administrativas -->
+    <section id="tareas" class="category-section">
+      <h2>💬 Tareas profesionales y administrativas</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Tareas profesionales y administrativas" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>     
+
+    <!-- Categoría: Matemáticas, Ciencias y STEM -->
+    <section id="ciencias" class="category-section">
+      <h2>💬 Matemáticas, Ciencias y STEM</h2>
+      <div class="gems-grid">
+        {% assign category_gems = all_gems | where: "category", "Matemáticas, Ciencias y STEM" | sort: "title" %}
+        {% for gem in category_gems %}
+          <div class="gem-card">
+            <h3>{{ gem.icon }} {{ gem.title }}</h3>
+            <p>{{ gem.description }}</p>
+            <div class="gem-actions">
+              <a href="{{ gem.url | relative_url }}" class="btn btn-details">Detalles</a>
+              <a href="{{ gem.gem_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-open">Abrir Gema ↗</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>   
 
   </main>
 </div>

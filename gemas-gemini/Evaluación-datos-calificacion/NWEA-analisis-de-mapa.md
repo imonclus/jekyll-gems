@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: Análisis de Mapa NWEA
 category: "Evaluación, datos y calificación"
+icon: 📈
+description: "Analiza informes NWEA MAP para generar un resumen unificado."
+gem_url: "https://gemini.google.com/gem/1ELnyIgY-U7l7zwYbWlyd2kzc-3Lm7CVg?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para analizar informes NWEA.
@@ -72,8 +66,3 @@ Presta atención a cada una de mis respuestas para que no me hagas preguntas que
 * **Grupo de intervención (3-5 mejores):** Los estudiantes que muestran las necesidades más significativas y consistentes en todos los informes disponibles.
 * **Grupo de Enriquecimiento (3-5 Mejores):** Los estudiantes que se desempeñan constantemente al más alto nivel y están listos para un enriquecimiento avanzado.
 * **Grupo de habilidades prioritarias:** Una lista de todos los estudiantes que se encuentran en las bandas RIT más bajas o en los rangos percentiles para el área de instrucción más débil que identificó en la Parte 3.
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

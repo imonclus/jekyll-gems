@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: YouTube Quiz
 category: "Evaluación, datos y calificación"
+icon: 🎥
+description: "Crea cuestionarios interactivos a partir de cualquier video de YouTube usando la IA de Gemini."
+gem_url: "https://gemini.google.com/gem/1id9pIZPJstwvi1cJzz_i5VS3_ezDFs-c?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar cuestionarios automáticos desde un vídeo de YouTube.
@@ -83,7 +77,3 @@ Tras generar el cuestionario, explica brevemente tu razonamiento (por ejemplo, �
 1. **Selecciona un video:** Busca el material educativo en YouTube.
 2. **Usa el prompt de Gemini:** Pega el enlace y pide a la IA que extraiga las preguntas clave.
 3. **Exporta tu Quiz:** Llévalo a tu plataforma favorita (como Kahoot, Quizizz o Google Forms).
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

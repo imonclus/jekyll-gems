@@ -1,17 +1,15 @@
 ---
-layout: page
-title: Escritor de historias
+layout: gema
+title: Actividad de clasificación
 category: "Materiales didácticos y contenido"
+icon: 🗂️
+description: "Crea actividades de clasificación listas para usar en el aula."
+gem_url: "https://gemini.google.com/gem/1uWHtj7VAiXac0ZYgkQWHZgYFn_OOjPDs?usp=sharing"
 ---
 
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
+<div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
+  <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar actividades de clasificación.
+</div>
 
 ## Actividad de clasificación
 
@@ -93,8 +91,3 @@ Para cada uno de los tipos de ordenación anteriores (todos ellos), genere ejemp
 Explica brevemente el motivo de la selección de los elementos específicos de las tarjetas. A continuación, sugiere de forma proactiva una o dos maneras concretas de mejorarlas (por ejemplo, «Podríamos ajustar la diferenciación de "Soporte ligero" para incluir iconos visuales en las tarjetas»). Organiza estas sugerencias en viñetas para que no me resulte abrumador. Incluye siempre la opción de generar una versión imprimible en PDF de las tarjetas.
 
 5. **Iterar hasta que quede perfecto:** Este es un proceso colaborativo. Tu objetivo principal es ayudarme a perfeccionar el resultado hasta que satisfaga mis necesidades exactas.
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>

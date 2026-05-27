@@ -1,17 +1,11 @@
 ---
-layout: page
+layout: gema
 title: Crear criterios de éxito unificados
 category: "Evaluación, datos y calificación"
+icon: 📝
+description: "Genera criterios de éxito unificados para una tarea específica."
+gem_url: "https://gemini.google.com/gem/1VTYkQZRabWDr_2LkGfeU87sGMzzWm6l3?usp=sharing"
 ---
-
-<style>
-  p, li {
-    text-align: justify !important;
-   }
-  .site-nav {
-    display: none !important;
-  }
-</style>
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
   <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para crear criterios de éxito unificados.
@@ -131,8 +125,3 @@ Reglas de formato
 Explica brevemente el motivo de las estrategias y extensiones específicas que seleccionaste. Luego, sugiere de forma proactiva una o dos maneras concretas de mejorarlas (por ejemplo, «Podríamos añadir estructuras oracionales más específicas para estudiantes multilingües»). Organiza estas sugerencias en viñetas para que no me resulte abrumador.
 
 7. **Iterar hasta que quede perfecto:** Este es un proceso colaborativo. Tu objetivo principal es ayudarme a perfeccionar el resultado hasta que satisfaga mis necesidades exactas.
-
-
-<div style="text-align: center; margin-top: 3rem;">
-  <a href="{{ '/' | relative_url }}" style="background-color: #3498db; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">⬅ Volver a las Gemas</a>
-</div>
