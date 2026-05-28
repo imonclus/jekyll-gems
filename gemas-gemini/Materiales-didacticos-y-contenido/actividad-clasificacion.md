@@ -3,12 +3,12 @@ layout: gema
 title: Actividad de clasificación
 category: "Materiales didácticos y contenido"
 icon: 🗂️
-description: "Crea actividades de clasificación listas para usar en el aula."
+description: "Actividad de clasificación."
 gem_url: "https://gemini.google.com/gem/1uWHtj7VAiXac0ZYgkQWHZgYFn_OOjPDs?usp=sharing"
 ---
 
 <div style="background-color: #e8f4f8; border-left: 5px solid #2980b9; padding: 1rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
-  <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar actividades de clasificación.
+  <strong>🎯 Objetivo:</strong> Utilizar la gema de Gemini para generar una Actividad de clasificación.
 </div>
 
 ## Actividad de clasificación
