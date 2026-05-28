@@ -1,0 +1,13 @@
+---
+---
+@import "minima";
+
+/* Sobrescribir el ancho máximo del contenedor del tema por defecto de Jekyll */
+.wrapper {
+  max-width: 1600px !important;
+}
+
+/* Ocultar enlaces de navegación no deseados (gemas) */
+.site-nav .page-link[href^="/gemas-gemini/"] {
+  display: none !important;
+}
