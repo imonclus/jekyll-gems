@@ -117,7 +117,7 @@ layout: home
       </div>
     </section>
 
-    <!-- Categoría: Comunicación -->
+    <!-- Categoría: Uso e integración de la IA-->
     <section id="integracion" class="category-section">
       <h2>💬 Uso e integración de la IA</h2>
       <div class="gems-grid">
