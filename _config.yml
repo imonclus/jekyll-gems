@@ -22,8 +22,8 @@ title: Crea con las Gems de Gemini
 email: imonclus@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Este es un sitio en el que recopilo gems de gemini que he hecho para facilitar el trabajo del educador.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-gems" # the subpath of your site, e.g. /blog
+url: "https://imonclus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 future: true
