@@ -8,6 +8,6 @@
 }
 
 /* Ocultar enlaces de navegación no deseados (gemas) */
-.site-nav .page-link[href^="/gemas-gemini/"] {
+.site-nav .page-link[href*="/gemas-gemini/"] {
   display: none !important;
 }
